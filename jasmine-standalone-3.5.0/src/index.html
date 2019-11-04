@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <div class='ripple-background'>
+      <div class='circle xxlarge shade1'></div>
+      <div class='circle xlarge shade2'></div>
+      <div class='circle large shade3'></div>
+      <div class='circle mediun shade4'></div>
+      <div class='circle small shade5'></div>
+    </div>
+    <link rel="stylesheet" href="styles.css">
+    <title>Thermostat</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="thermostat.js"></script>
+    <script src="interface.js"></script>
+  </head>
+  <body>
+    <h1 id="Thermostat-title">Thermostat</h1>
+    <p id="temp-text">the current temp is </p><span id="temperature">20</span>
+    <p>
+      <button id="temp-up" class="button">+</button>
+      <button id="temp-down" class="button">-</button>
+      <br>
+      <button id="temp-reset" class="button">Reset</button>
+      <br>
+      <p id="power">power saving mode is</p> <span id="power-saving">on</span>
+      <br>
+    </p>
+    <section>
+      <p>
+        <button id="psm-on" class="button">PSM on</button>
+        <button id="psm-off" class="button">PSM off</button>
+      </p>
+    </section>
+    <br>
+    <h1 id="curent-temp-text">Current Temperature </h1><span id="current-temperature">20</span>
+    <select id="current-city">
+      <option value="london">London</option>
+      <option value="newyork">New York</option>
+      <option value="paris">Paris</option>
+      <option value="tokyo">Tokyo</option>
+    </select>
+  </body>
+</html>
